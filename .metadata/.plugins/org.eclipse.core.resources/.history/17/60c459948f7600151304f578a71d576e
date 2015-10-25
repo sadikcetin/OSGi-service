@@ -1,9 +1,0 @@
-package org.sifirbir.osgi.language.turkish.impl;
-
-public interface Configuration {
-
-	static interface BUNDLE {
-		
-	}
-	
-}

@@ -1,8 +1,0 @@
-package org.sifirbir.osgi.manager.api;
-
-public interface IManager<SERVICE> {
-
-	void addService(SERVICE service);
-	void removeService(SERVICE service);
-
-}

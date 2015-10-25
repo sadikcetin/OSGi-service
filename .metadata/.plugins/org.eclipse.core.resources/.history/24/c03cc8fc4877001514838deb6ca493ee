@@ -1,9 +1,0 @@
-package org.sifirbir.osgi.language.api;
-
-public interface ILanguage {
-
-	String code();
-	void speak();
-	void state();
-	
-}

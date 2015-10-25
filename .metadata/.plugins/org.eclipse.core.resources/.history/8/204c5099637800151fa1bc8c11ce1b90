@@ -1,7 +1,0 @@
-package org.sifirbir.osgi.manager.language.impl;
-
-import org.osgi.service.cm.ConfigurationAdmin;
-
-public class ConfigurationBundle implements ConfigurationAdmin {
-
-}

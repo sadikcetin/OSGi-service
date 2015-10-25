@@ -1,8 +1,0 @@
-package org.sifirbir.osgi.manager.api.command;
-
-import org.eclipse.osgi.framework.console.CommandInterpreter;
-
-public interface IManagerCommand {
-
-	int getServiceCount();
-}

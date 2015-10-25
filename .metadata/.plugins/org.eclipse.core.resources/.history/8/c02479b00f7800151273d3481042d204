@@ -1,5 +1,0 @@
-package org.sifirbir.osgi.manager.language.impl;
-
-public abstract class DynamicService {
-
-}
