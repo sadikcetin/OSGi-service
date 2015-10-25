@@ -1,0 +1,14 @@
+package org.sifirbir.osgi.language.impl;
+
+import org.sifirbir.osgi.language.api.ILanguage;
+import org.sifirbir.osgi.language.api.IState;
+
+public class StateImpl implements IState {
+
+	@Override
+	public void askState(ILanguage lang) {
+
+		lang.state();
+	}
+
+}

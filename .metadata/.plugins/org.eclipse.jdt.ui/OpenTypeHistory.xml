@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=org.sifirbir.osgi.language.turkish/src&lt;org.sifirbir.osgi.language.turkish.impl{TurkishLangImpl.java[TurkishLangImpl" modifiers="1" timestamp="1445359306000"/>
+<typeInfo handle="=org.sifirbir.osgi.manager.language/src&lt;org.sifirbir.osgi.manager.language.impl{LanguageManagerCommand.java[LanguageManagerCommand" modifiers="1" timestamp="1445484117000"/>
+<typeInfo handle="=org.sifirbir.osgi.manager.language/src&lt;org.sifirbir.osgi.manager.language.impl{LanguageManagerImpl.java[LanguageManagerImpl" modifiers="1" timestamp="1445469921000"/>
+</typeInfoHistroy>

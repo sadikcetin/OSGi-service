@@ -1,0 +1,7 @@
+package org.sifirbir.osgi.language.api;
+
+public interface IHello {
+	
+	void sayHello(ILanguage lang);
+
+}

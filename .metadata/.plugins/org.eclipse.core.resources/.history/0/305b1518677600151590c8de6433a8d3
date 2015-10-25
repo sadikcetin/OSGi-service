@@ -1,0 +1,19 @@
+package org.sifirbir.osgi.services.impl;
+
+import org.sifirbir.osgi.language.api.ILanguage;
+
+public class GermanLangImpl implements ILanguage {
+
+	@Override
+	public void speak() {
+
+		System.out.println("HALLO !!!");
+	}
+
+	@Override
+	public void state() {
+		System.out.println("WIE GEHT ES IHNEN ???");
+		
+	}
+
+}

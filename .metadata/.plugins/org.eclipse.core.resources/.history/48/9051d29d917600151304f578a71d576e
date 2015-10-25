@@ -1,0 +1,5 @@
+package org.sifirbir.osgi.language.english.impl;
+
+public interface Configuration {
+
+}

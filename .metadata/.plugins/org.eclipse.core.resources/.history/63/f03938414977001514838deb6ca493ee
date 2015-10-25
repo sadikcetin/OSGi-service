@@ -1,0 +1,23 @@
+package org.sifirbir.osgi.language.german.impl;
+
+import org.sifirbir.osgi.language.api.ILanguage;
+
+public class GermanLangImpl implements ILanguage {
+
+	@Override
+	public String speak() {
+		return (Configuration.LANG.MESSAGE_SPEAK);
+		
+	}
+
+	@Override
+	public String state() {
+		System.out.println(Configuration.LANG.MESSAGE_STATE);
+	}
+
+	@Override
+	public String code() {
+		return "de";
+	}
+
+}

@@ -1,0 +1,17 @@
+package org.sifirbir.osgi.language.turkish.impl;
+
+public class TurkishLangImpl implements ILanguage {
+
+	@Override
+	public void speak() {
+		System.out.println("MERHABALAR !!!");
+		
+	}
+
+	@Override
+	public void state() {
+		System.out.println("NASILSINIZ ???");
+		
+	}
+
+}

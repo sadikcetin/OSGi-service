@@ -1,0 +1,14 @@
+package org.sifirbir.osgi.manager.language.impl;
+
+public interface Configuration {
+	
+	static interface BUNDLE{
+	
+		public static final String NAME ="Manager Language Bundle";
+		public static final String MESSAGE_sTART = NAME +"STARTED";
+		
+	}
+	
+	
+
+}

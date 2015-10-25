@@ -1,0 +1,41 @@
+package org.sifirbir.osgi.manager.language.impl;
+
+import java.util.LinkedList;
+import java.util.List;
+
+import org.sifirbir.osgi.language.api.ILanguage;
+import org.sifirbir.osgi.manager.api.IManager;
+
+public class LanguageManagerImpl implements IManager<ILanguage> {
+
+	private static LanguageManagerImpl INSTANCE = null;
+	private List<ILanguage> languageList = null;
+	
+	public static int serviceCount = 0;
+	
+	private LanguageManagerImpl() {
+		languageList = new LinkedList<ILanguage>();
+	}
+	
+	public static LanguageManagerImpl getInstance() {
+		if (INSTANCE == null)
+			INSTANCE = new LanguageManagerImpl();
+		return INSTANCE;
+	}
+
+	@Override
+	public void addService(ILanguage service) {
+		this.languageList.add(service);
+		System.out.println("## "+ service.code() + " ADDED" );
+		serviceCount++;
+	}
+
+	@Override
+	public void removeService(ILanguage service) {
+		this.languageList.remove(service);
+		System.out.println("## " + service.code() + " REMOVED");
+		serviceCount--;
+	}
+	
+
+}

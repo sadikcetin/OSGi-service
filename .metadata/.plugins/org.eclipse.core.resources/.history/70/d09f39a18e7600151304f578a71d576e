@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Sifirbir Turkish Language Bundle
+Bundle-SymbolicName: org.sifirbir.osgi.language.turkish
+Bundle-Version: 1.0.0
+Bundle-Activator: org.sifirbir.osgi.language.turkish.internals.Activator
+Bundle-Vendor: Sadik Cetin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: org.osgi.framework;version="1.3.0"
+Bundle-ActivationPolicy: lazy

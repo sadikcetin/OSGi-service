@@ -1,0 +1,24 @@
+!SESSION 2015-10-23 18:12:10.383 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_85
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -dev file:/home/sadik/Development/Workspaces/OSGI_Practices/Tasks/.metadata/.plugins/org.eclipse.pde.core/Configuration of Sadik/dev.properties -os linux -ws gtk -arch x86_64 -consoleLog -clean -console
+
+!ENTRY org.eclipse.equinox.cm 4 0 2015-10-23 18:12:10.977
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.equinox.cm [3]
+  Unresolved requirement: Import-Package: org.osgi.service.cm; version="[1.5.0,1.6.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1562)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.osgi 4 0 2015-10-23 18:12:11.038
+!MESSAGE Bundle initial@reference:file:org.eclipse.equinox.cm_1.1.100.v20150205-1358.jar was not resolved.

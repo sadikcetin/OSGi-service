@@ -1,0 +1,49 @@
+package org.sifirbir.osgi.manager;
+
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceReference;
+import org.osgi.util.tracker.ServiceTracker;
+import org.osgi.util.tracker.ServiceTrackerCustomizer;
+import org.sifirbir.osgi.language.api.ILanguage;
+
+public class Activator implements BundleActivator, ServiceTrackerCustomizer<ILanguage, ILanguage> {
+
+	private ServiceTracker<ILanguage, ILanguage> serviceTrackerLanguage;
+	private BundleContext context = null;
+	
+	@Override
+	public void start(BundleContext arg0) throws Exception {
+		this.context = arg0;
+		trackILanguageService();
+	}
+	
+	private void trackILanguageService() {
+		serviceTrackerLanguage = new ServiceTracker<ILanguage, ILanguage>(this.context, ILanguage.class, this);
+		serviceTrackerLanguage.open();
+	}
+	
+
+	@Override
+	public void stop(BundleContext arg0) throws Exception {
+		
+	}
+
+	@Override
+	public ILanguage addingService(ServiceReference<ILanguage> arg0) {
+		
+	}
+
+	@Override
+	public void modifiedService(ServiceReference<ILanguage> arg0, ILanguage arg1) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void removedService(ServiceReference<ILanguage> arg0, ILanguage arg1) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

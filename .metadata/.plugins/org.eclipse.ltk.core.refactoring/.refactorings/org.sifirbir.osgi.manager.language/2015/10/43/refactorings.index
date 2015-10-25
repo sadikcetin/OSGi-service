@@ -1,0 +1,8 @@
+1445283518241	Rename package 'org.sifirbir.osgi.manager.language.ımpl'
+1445283538325	Rename type 'ManagerImpl'
+1445339728289	Rename field 'serviceCommandProvider'
+1445444522184	Delete element
+1445458495339	Infer generic type arguments
+1445459382740	Convert local variable 'serviceReferece' to field
+1445459788451	Infer generic type arguments
+1445462894895	Delete element

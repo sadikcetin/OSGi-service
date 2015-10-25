@@ -1,0 +1,6 @@
+package org.sifirbir.osgi.language.api;
+
+public interface IState {
+
+	void askState(ILanguage lang);
+}

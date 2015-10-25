@@ -1,0 +1,20 @@
+INDEX VERSION 1.127+/home/sadik/Development/Workspaces/OSGI_Practices/Tasks/.metadata/.plugins/org.eclipse.jdt.core
+2637391990.index
+3108215624.index
+1593792608.index
+3528766831.index
+1211646091.index
+93804853.index
+3020891780.index
+3044214333.index
+761659056.index
+2775907458.index
+2299577650.index
+969670755.index
+2841904950.index
+873153119.index
+2441898237.index
+4215556225.index
+1874780019.index
+3142107428.index
+467064898.index

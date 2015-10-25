@@ -1,0 +1,34 @@
+package org.sifirbir.osgi.language;
+
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceRegistration;
+import org.sifirbir.osgi.language.api.ILanguage;
+import org.sifirbir.osgi.language.impl.EnglishLangImpl;
+import org.sifirbir.osgi.language.impl.GermanLangImpl;
+import org.sifirbir.osgi.language.impl.TurkishLangImpl;
+
+public class Activator implements BundleActivator {
+
+	private ServiceRegistration turkish;
+	private ServiceRegistration english;
+	private ServiceRegistration german;
+
+	
+	public void start(BundleContext context) throws Exception {
+		System.out.println("All Services Started");
+		turkish = context.registerService(ILanguage.class.getName(), new TurkishLangImpl(), null);
+	    english = context.registerService(ILanguage.class.getName(), new EnglishLangImpl(), null);
+		german = context.registerService(ILanguage.class.getName(), new GermanLangImpl(), null);
+		
+
+	}
+
+	public void stop(BundleContext context) throws Exception {
+		System.out.println("Stopping...I am a SERVICE!");
+		turkish.unregister();
+		english.unregister();
+		german.unregister();
+	}
+
+}

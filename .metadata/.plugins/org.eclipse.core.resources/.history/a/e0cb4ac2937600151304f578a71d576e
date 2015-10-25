@@ -1,0 +1,9 @@
+package org.sifirbir.osgi.manager;
+
+import org.osgi.framework.BundleActivator;
+
+public class Activator implements BundleActivator {
+	
+
+
+}

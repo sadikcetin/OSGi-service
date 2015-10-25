@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Client
+Bundle-SymbolicName: org.sifirbir.osgi.manager.api
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Sadik Cetin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: org.eclipse.osgi.framework.console;version="1.1.0",
+ org.osgi.framework;version="1.3.0",
+ org.osgi.util.tracker;version="1.5.1",
+ org.sifirbir.osgi.language.api
+Export-Package: org.sifirbir.osgi.manager.api,
+ org.sifirbir.osgi.manager.api.command

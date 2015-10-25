@@ -1,0 +1,9 @@
+1445262008341	Rename package 'org.sifirbir.osgi.client'
+1445262018175	Rename package 'org.sifirbir.osgi.client.impl'
+1445262036111	Rename package 'org.sifirbir.osgi.client.api'
+1445271227801	Rename field 'helloTracker'
+1445283507189	Move compilation unit
+1445283696590	Delete element
+1445283995534	Delete element
+1445426677878	Rename method 'addService'
+1445426725894	Rename method 'removeService'

@@ -1,0 +1,36 @@
+package org.sifirbir.osgi.language;
+
+import org.eclipse.osgi.framework.console.CommandProvider;
+import org.osgi.framework.BundleActivator;
+import org.osgi.framework.BundleContext;
+import org.osgi.framework.ServiceRegistration;
+import org.sifirbir.osgi.services.api.IHello;
+import org.sifirbir.osgi.services.api.IState;
+import org.sifirbir.osgi.services.impl.HelloImpl;
+import org.sifirbir.osgi.services.impl.StateImpl;
+
+public class Activator implements BundleActivator {
+
+	private ServiceRegistration helloReg;
+	private ServiceRegistration stateReg;
+	private CommandProvider command;
+
+	public void start(BundleContext context) throws Exception {
+		System.out.println("All Services Started");
+		helloReg = context.registerService(IHello.class.getName(), new HelloImpl(), null);
+		stateReg = context.registerService(IState.class.getName(), new StateImpl(), null);
+		
+		command = new CustomCommand();
+		context.registerService(CommandProvider.class.getName(), command , null);
+
+	}
+
+	public void stop(BundleContext context) throws Exception {
+		System.out.println("Stopping...I am a SERVICE!");
+		helloReg.unregister();
+		stateReg.unregister();
+		command = null;
+
+	}
+
+}

@@ -1,0 +1,14 @@
+package org.sifirbir.osgi.services.impl;
+
+import org.sifirbir.osgi.language.api.IHello;
+import org.sifirbir.osgi.language.api.ILanguage;
+
+public class HelloImpl implements IHello {
+
+	@Override
+	public void sayHello(ILanguage lang) {
+		
+		lang.speak();
+	}
+
+}

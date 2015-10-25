@@ -1,0 +1,14 @@
+package org.sifirbir.osgi.language.german.impl;
+
+public interface Configuration {
+
+	static interface BUNDLE{
+		
+		public static final String NAME = "Sifirbir English Language Bundle";
+	}
+	
+	static interface LANG{
+		
+		
+	}
+}

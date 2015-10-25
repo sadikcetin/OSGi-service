@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="false" key="generateActivator"/>
+	<item value="false" key="rcpPlugin"/>
+	<item value="false" key="apiAnalysis"/>
+	<item value="" key="targetName"/>
+	<item value="true" key="osgiProject"/>
+	<list key="providers">
+		<item value="Sadik CETIN"/>
+		<item value="Sadik Cetin"/>
+	</list>
+	<section name="dependenciesView">
+	</section>
+	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="editBundleContainerWizard">
+		<item value="/home/sadik/Downloads" key="location3"/>
+		<item value="/home/sadik/Development/IDEs/eclipse/plugins" key="location2"/>
+		<item value="/home/sadik/Development/IDEs/eclipse-mars/plugins" key="location1"/>
+	</section>
+	<section name="PluginImportWizard">
+	</section>
+	<section name="pluginsView">
+	</section>
+	<section name="PDEFormActionManager">
+	</section>
+	<section name="targetStateView">
+	</section>
+</section>
